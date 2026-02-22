@@ -1,19 +1,13 @@
 "use client";
 
-import { Plane, Tv, Wifi, Luggage, Info } from "lucide-react";
+import { Plane } from "lucide-react";
+import Image from "next/image";
 
-const AMENITY_ICONS = {
-  entertainment: Tv,
-  wifi:          Wifi,
-  baggage:       Luggage,
-  info:          Info,
-};
-
-const AMENITY_LABELS = {
-  entertainment: "In-flight entertainment",
-  wifi:          "Wi-Fi available",
-  baggage:       "Baggage included",
-  info:          "More info",
+const AMENITY_IMAGES = {
+  entertainment: { src: "/icons/Video.svg",   alt: "In-flight entertainment" },
+  wifi:          { src: "/icons/Wi-Fi.svg",   alt: "Wi-Fi available" },
+  baggage:       { src: "/icons/baggage.svg", alt: "Baggage included" },
+  info:          { src: "/icons/Info.svg",    alt: "More info" },
 };
 
 export function FlightSegmentRow({ segment }) {
@@ -54,10 +48,10 @@ export function FlightSegmentRow({ segment }) {
         {segment.amenities?.length > 0 && (
           <div className="flex items-center gap-2 ml-auto pt-0.5">
             {segment.amenities.map((a) => {
-              const Icon = AMENITY_ICONS[a];
-              return Icon ? (
-                <span key={a} title={AMENITY_LABELS[a]}>
-                  <Icon size={14} className="text-gray-400" />
+              const img = AMENITY_IMAGES[a];
+              return img ? (
+                <span key={a} title={img.alt}>
+                  <Image src={img.src} alt={img.alt} width={14} height={14} />
                 </span>
               ) : null;
             })}

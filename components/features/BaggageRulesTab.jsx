@@ -4,12 +4,12 @@ import { Luggage } from "lucide-react";
 
 export function BaggageRulesTab({ flight }) {
   const r = flight.baggageRules;
-  if (!r) return <p className="text-sm text-gray-500 py-2">Baggage details not available.</p>;
+  if (!r) return <p className="text-xs py-2">Baggage details not available.</p>;
 
   return (
     <div className="text-sm space-y-4">
       <div className="flex gap-3 items-start">
-        <Luggage size={16} className="text-brand-purple mt-0.5 shrink-0" />
+        <Luggage size={16} className="text- mt-0.5 shrink-0" />
         <div>
           <div className="font-semibold text-gray-800">Carry-on Bag</div>
           <div className="text-gray-600">{r.carryOn ?? "Not included"}</div>
