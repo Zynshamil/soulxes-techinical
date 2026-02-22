@@ -56,7 +56,6 @@ export function SearchRow({ params, onChange, onSearch }) {
   return (
     <div
       className="flex gap-4"
-      style={{ fontFamily: "'Segoe UI', sans-serif" }}
     >
       <div className="flex gap-1">
         <Input

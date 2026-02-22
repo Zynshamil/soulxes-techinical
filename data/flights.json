@@ -63,7 +63,7 @@
     {
       "id": "FL002",
       "airlineId": "abc-air-tech",
-      "airline": "ABC Air Technologies",
+      "airline": "Air B Technologies",
       "airlineInitial": "T",
       "class": "Economy",
       "stops": 1,
@@ -571,20 +571,20 @@
   ],
   "filters": {
     "stops": [
-      { "id": "nonstop",     "label": "Nonstop (4)", "price": "$12,900" },
-      { "id": "1-stop",      "label": "1 Stop (2)",  "price": "$20,300" },
-      { "id": "2plus-stops", "label": "2+ Stops (2)","price": "$19,000" }
+      { "id": "nonstop",     "label": "Nonstop (23)", "price": "$110" },
+      { "id": "1-stop",      "label": "1 Stop (4)",   "price": "$324" },
+      { "id": "2plus-stops", "label": "2+ Stops (2)", "price": "$349" }
     ],
     "airlines": [
-      { "id": "abc-airlines", "label": "ABC Airlines",          "price": "$16,000" },
-      { "id": "abc-air-tech", "label": "ABC Air Technologies",  "price": "$20,300" },
-      { "id": "xyz-airways",  "label": "XYZ Airways",           "price": "$21,200" },
-      { "id": "bop-links",    "label": "BOP Links",             "price": "$12,900" },
-      { "id": "edf-express",  "label": "EDF Express",           "price": "$19,000" }
+      { "id": "abc-airlines", "label": "ABC Airlines",          "price": "$160" },
+      { "id": "abc-air-tech", "label": "AA Air Tech",  "price": "$203" },
+      { "id": "xyz-airways",  "label": "XYZ Airways",           "price": "$212" },
+      { "id": "bop-links",    "label": "BOP Links",             "price": "$129" },
+      { "id": "edf-express",  "label": "EDF Express",           "price": "$190" }
     ],
     "baggage": [
-      { "id": "carry-on", "label": "Carry-on bag", "price": "$12,900" },
-      { "id": "checked",  "label": "Checked bag",  "price": "$19,000" }
+      { "id": "carry-on", "label": "Carry-on bag", "price": "$129" },
+      { "id": "checked",  "label": "Checked bag",  "price": "$99" }
     ]
   },
   "sortOptions": [
