@@ -588,9 +588,9 @@
     ]
   },
   "sortOptions": [
-    { "id": "recommended", "label": "Recommended", "emoji": "👍" },
-    { "id": "fastest",     "label": "Fastest",     "emoji": "⚡" },
-    { "id": "cheapest",    "label": "Cheapest",    "emoji": "💰" }
+    { "id": "recommended", "label": "Recommended", "icon": "/recommended.svg" },
+    { "id": "fastest",     "label": "Fastest",     "icon": "/fastest.svg" },
+    { "id": "cheapest",    "label": "Cheapest",    "icon": "/cheapest.svg" }
   ],
   "promos": [
     {
