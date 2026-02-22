@@ -596,7 +596,7 @@
     {
       "id": "guidelines",
       "type": "image-card",
-      "image": "https://images.unsplash.com/photo-1584483766114-2cea6facdf57?w=500&q=80",
+      "image": "/covid.png",
       "title": "International Guideline",
       "description": "COVID safety measures adopted by various countries including VISA restrictions, quarantine rules, etc.",
       "buttonLabel": "View guidelines"
@@ -604,18 +604,15 @@
     {
       "id": "sale",
       "type": "sale-banner",
-      "discount": "50%"
-    },
-    {
-      "id": "deal",
-      "type": "text-card",
+      "image": "/sale-50.png",
       "title": "We've found you a great deal!",
       "description": "Get more, spend less with up to $575 off when you book your flight + stay together.",
       "buttonLabel": "Shop flight"
     },
     {
       "id": "login",
-      "type": "text-card",
+      "type": "image-card",
+      "image": "/discount.png",
       "title": "Log-in and get exclusive discounts!",
       "description": "Log in and Unlock all the exclusive offers and use wallet etc",
       "buttonLabel": "Login/Create Account"
