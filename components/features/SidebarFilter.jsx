@@ -37,8 +37,8 @@ export function SidebarFilter({ data, onApply, onReset }) {
 
   return (
     <Card className="w-full max-w-xs border-0 shadow-none lg:border border-white rounded-sm">
-      <CardHeader className="px-4 pt-4">
-        <CardTitle className="text-[18px] font-semibold">Filter By</CardTitle>
+      <CardHeader className="px-1.5 pt-4">
+        <CardTitle className="text-[18px] pb-4 font-semibold">Filter By</CardTitle>
         {activeCount > 0 && (
           <span className="text-xs bg-brand-purple text-white rounded-full px-2 py-0.5 font-medium">
             {activeCount}
