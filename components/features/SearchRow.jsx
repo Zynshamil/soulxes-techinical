@@ -57,7 +57,7 @@ export function SearchRow({ params, onChange, onSearch }) {
     <div
       className="flex gap-4 flex-wrap p-2 lg:p-0"
     >
-      <div className="flex flex-wrap gap-1">
+      <div className="flex flex-wrap gap-2">
         <Input
           placeholder="From"
           icon={Plane}
