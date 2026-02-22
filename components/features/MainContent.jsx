@@ -18,7 +18,7 @@ export function MainContent({
   onLoadMore,
 }) {
   return (
-    <div className="w-full max-w-[1289px] mx-auto mt-8">
+    <div className="w-full max-w-[1289px] mx-auto lg:px-8 mt-8">
       <div className="flex flex-col lg:flex-row gap-8 items-start">
         <FilterSidebar
           data={filters}
