@@ -15,11 +15,11 @@ export function FlightCard({ flight }) {
 
   return (
     <Card className="w-full border-0 shadow-none lg:shadow-sm">
-      <CardContent className="p-4">
+      <CardContent className="p-4 flex flex-col gap-4">
 
         <AirlineHeader airline={flight.airline} travelClass={flight.class} />
 
-        <div className="flex items-stretch gap-4 mb-6">
+        <div className="flex items-stretch gap-3.5">
           <FlightRouteBox
             departure={flight.departure}
             arrival={flight.arrival}

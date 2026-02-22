@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function AirlineHeader({ airline, travelClass }) {
   return (
-    <div className="flex justify-between items-center mb-6 text-base ">
+    <div className="flex justify-between items-center text-base ">
       <div className="flex items-center gap-3 p-1">
         <div className="w-8 h-8 flex items-center justify-center overflow-hidden shrink-0">
           <Image

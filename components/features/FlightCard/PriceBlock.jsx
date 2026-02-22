@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/Button";
 
 export function PriceBlock({ price, bookState, onBook }) {
   return (
-    <div className="flex flex-col items-end justify-center gap-3 pl-2">
-      <div className="text-2xl font-bold text-gray-900">
+    <div className="flex flex-col items-start justify-center gap-3 pl-2">
+      <div className="text-2xl w-full font-bold text-gray-900">
         ${price.toLocaleString()}
       </div>
       {bookState === "booked" ? (
@@ -11,7 +11,7 @@ export function PriceBlock({ price, bookState, onBook }) {
           ✓ Booked!
         </div>
       ) : (
-        <Button className="px-8" onClick={onBook} disabled={bookState === "loading"}>
+        <Button className="w-[99px] font-semibold text-sm" onClick={onBook} disabled={bookState === "loading"}>
           {bookState === "loading" ? "Booking…" : "Book Now"}
         </Button>
       )}
