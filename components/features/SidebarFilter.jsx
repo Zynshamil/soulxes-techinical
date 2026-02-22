@@ -36,7 +36,7 @@ export function SidebarFilter({ data, onApply, onReset }) {
   } = useSidebarFilter({ onApply, onReset });
 
   return (
-    <Card className="w-full max-w-xs border-0 shadow-none lg:border border-white rounded-sm">
+    <Card className="w-full lg:w-[235px] p-2 lg:p-0 border-0 shadow-none lg:border border-white rounded-sm">
       <CardHeader className="px-1.5 pt-4">
         <CardTitle className="text-[18px] pb-4 font-semibold">Filter By</CardTitle>
         {activeCount > 0 && (
