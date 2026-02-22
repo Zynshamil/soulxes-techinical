@@ -1,0 +1,639 @@
+{
+  "flights": [
+    {
+      "id": "FL001",
+      "airlineId": "abc-airlines",
+      "airline": "ABC Airlines",
+      "airlineInitial": "A",
+      "class": "Economy",
+      "stops": 0,
+      "stopCity": null,
+      "departure": {
+        "time": "14:50",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "Moi Intl",
+        "city": "Mombasa",
+        "country": "Kenya",
+        "code": "MBA"
+      },
+      "arrival": {
+        "time": "00:40",
+        "date": "Mon, 30 Jan 2023",
+        "airport": "JKIA Terminal",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "code": "NBO"
+      },
+      "duration": "9h 50m",
+      "durationMinutes": 590,
+      "departureMinutes": 890,
+      "arrivalMinutes": 40,
+      "price": 18500,
+      "seatsRemaining": 100,
+      "refundPolicy": "Partially Refundable",
+      "baggageIncluded": ["carry-on"],
+      "recommendedScore": 92,
+      "segments": [
+        {
+          "from": { "code": "MBA", "time": "14:50", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
+          "to":   { "code": "NBO", "time": "00:40", "date": "Mon, 30 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "duration": "9h 50m",
+          "amenities": ["entertainment", "wifi", "baggage"]
+        }
+      ],
+      "layovers": [],
+      "fareDetails": {
+        "baseFare": 15200,
+        "taxes": 2300,
+        "fees": 1000,
+        "total": 18500
+      },
+      "baggageRules": {
+        "carryOn": "1 piece, max 7 kg",
+        "checked": null,
+        "additionalInfo": "Additional checked bags can be purchased at check-in for $60 per bag."
+      },
+      "cancellationRules": {
+        "policy": "Partially Refundable",
+        "details": "A cancellation fee of $500 applies. The remaining balance will be refunded within 7-10 business days.",
+        "changePolicy": "Date changes permitted with a $200 fee plus any fare difference."
+      },
+      "flightNotes": []
+    },
+    {
+      "id": "FL002",
+      "airlineId": "abc-air-tech",
+      "airline": "Air B Technologies",
+      "airlineInitial": "T",
+      "class": "Economy",
+      "stops": 1,
+      "stopCity": "Dubai",
+      "departure": {
+        "time": "08:30",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "Moi Intl",
+        "city": "Mombasa",
+        "country": "Kenya",
+        "code": "MBA"
+      },
+      "arrival": {
+        "time": "21:00",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "JKIA Terminal",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "code": "NBO"
+      },
+      "duration": "12h 30m",
+      "durationMinutes": 750,
+      "departureMinutes": 510,
+      "arrivalMinutes": 1260,
+      "price": 20300,
+      "seatsRemaining": 45,
+      "refundPolicy": "Non-Refundable",
+      "baggageIncluded": ["carry-on", "checked"],
+      "recommendedScore": 78,
+      "segments": [
+        {
+          "from": { "code": "MBA", "time": "08:30", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
+          "to":   { "code": "DXB", "time": "14:30", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
+          "duration": "6h 00m",
+          "amenities": ["entertainment", "wifi"]
+        },
+        {
+          "from": { "code": "DXB", "time": "18:15", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
+          "to":   { "code": "NBO", "time": "21:00", "date": "Sun, 29 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "duration": "2h 45m",
+          "amenities": ["entertainment", "baggage"]
+        }
+      ],
+      "layovers": [
+        {
+          "city": "Dubai",
+          "airport": "DXB",
+          "duration": "3h 45m",
+          "notes": ["Change of Terminal", "Change of planes"]
+        }
+      ],
+      "fareDetails": {
+        "baseFare": 16800,
+        "taxes": 2500,
+        "fees": 1000,
+        "total": 20300
+      },
+      "baggageRules": {
+        "carryOn": "1 piece, max 7 kg",
+        "checked": "1 piece, max 23 kg",
+        "additionalInfo": "One checked bag is included in this fare."
+      },
+      "cancellationRules": {
+        "policy": "Non-Refundable",
+        "details": "This ticket is non-refundable. No refund will be issued for cancellations.",
+        "changePolicy": "No date changes are permitted after booking."
+      },
+      "flightNotes": [
+        { "icon": "warning", "text": "Separate tickets booked together for cheaper price" },
+        { "icon": "plane",   "text": "Change of Terminal" },
+        { "icon": "transfer","text": "Self Transfer" },
+        { "icon": "bag",     "text": "7 kg carry-on limit" }
+      ]
+    },
+    {
+      "id": "FL003",
+      "airlineId": "xyz-airways",
+      "airline": "XYZ Airways",
+      "airlineInitial": "X",
+      "class": "Business",
+      "stops": 0,
+      "stopCity": null,
+      "departure": {
+        "time": "10:15",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "Moi Intl",
+        "city": "Mombasa",
+        "country": "Kenya",
+        "code": "MBA"
+      },
+      "arrival": {
+        "time": "20:00",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "JKIA Terminal",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "code": "NBO"
+      },
+      "duration": "9h 45m",
+      "durationMinutes": 585,
+      "departureMinutes": 615,
+      "arrivalMinutes": 1200,
+      "price": 21200,
+      "seatsRemaining": 8,
+      "refundPolicy": "Fully Refundable",
+      "baggageIncluded": ["carry-on", "checked"],
+      "recommendedScore": 88,
+      "segments": [
+        {
+          "from": { "code": "MBA", "time": "10:15", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
+          "to":   { "code": "NBO", "time": "20:00", "date": "Sun, 29 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "duration": "9h 45m",
+          "amenities": ["entertainment", "wifi", "baggage", "info"]
+        }
+      ],
+      "layovers": [],
+      "fareDetails": {
+        "baseFare": 17500,
+        "taxes": 2700,
+        "fees": 1000,
+        "total": 21200
+      },
+      "baggageRules": {
+        "carryOn": "2 pieces, max 12 kg total",
+        "checked": "2 pieces, max 32 kg each",
+        "additionalInfo": "Business class includes priority baggage handling."
+      },
+      "cancellationRules": {
+        "policy": "Fully Refundable",
+        "details": "Free cancellation up to 24 hours before departure. Full refund issued within 3-5 business days.",
+        "changePolicy": "Unlimited free date changes up to 24 hours before departure."
+      },
+      "flightNotes": []
+    },
+    {
+      "id": "FL004",
+      "airlineId": "bop-links",
+      "airline": "BOP Links",
+      "airlineInitial": "B",
+      "class": "Economy",
+      "stops": 0,
+      "stopCity": null,
+      "departure": {
+        "time": "06:00",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "Moi Intl",
+        "city": "Mombasa",
+        "country": "Kenya",
+        "code": "MBA"
+      },
+      "arrival": {
+        "time": "16:05",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "JKIA Terminal",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "code": "NBO"
+      },
+      "duration": "10h 05m",
+      "durationMinutes": 605,
+      "departureMinutes": 360,
+      "arrivalMinutes": 965,
+      "price": 12900,
+      "seatsRemaining": 230,
+      "refundPolicy": "Partially Refundable",
+      "baggageIncluded": ["carry-on"],
+      "recommendedScore": 85,
+      "segments": [
+        {
+          "from": { "code": "MBA", "time": "06:00", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
+          "to":   { "code": "NBO", "time": "16:05", "date": "Sun, 29 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "duration": "10h 05m",
+          "amenities": ["entertainment", "wifi"]
+        }
+      ],
+      "layovers": [],
+      "fareDetails": {
+        "baseFare": 10500,
+        "taxes": 1900,
+        "fees": 500,
+        "total": 12900
+      },
+      "baggageRules": {
+        "carryOn": "1 piece, max 7 kg",
+        "checked": null,
+        "additionalInfo": "Checked bags start from $55 per bag."
+      },
+      "cancellationRules": {
+        "policy": "Partially Refundable",
+        "details": "Cancellation fee of $300 applies. Remaining balance refunded within 10 business days.",
+        "changePolicy": "Date changes allowed with a $150 fee plus fare difference."
+      },
+      "flightNotes": []
+    },
+    {
+      "id": "FL005",
+      "airlineId": "edf-express",
+      "airline": "EDF Express",
+      "airlineInitial": "E",
+      "class": "Economy",
+      "stops": 2,
+      "stopCity": "Dubai, Mumbai",
+      "departure": {
+        "time": "07:45",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "Moi Intl",
+        "city": "Mombasa",
+        "country": "Kenya",
+        "code": "MBA"
+      },
+      "arrival": {
+        "time": "23:05",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "JKIA Terminal",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "code": "NBO"
+      },
+      "duration": "15h 20m",
+      "durationMinutes": 920,
+      "departureMinutes": 465,
+      "arrivalMinutes": 1385,
+      "price": 19000,
+      "seatsRemaining": 15,
+      "refundPolicy": "Non-Refundable",
+      "baggageIncluded": ["carry-on", "checked"],
+      "recommendedScore": 65,
+      "segments": [
+        {
+          "from": { "code": "MBA", "time": "07:45", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
+          "to":   { "code": "DXB", "time": "12:45", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
+          "duration": "5h 00m",
+          "amenities": ["entertainment"]
+        },
+        {
+          "from": { "code": "DXB", "time": "15:15", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
+          "to":   { "code": "BOM", "time": "18:15", "date": "Sun, 29 Jan 2023", "airport": "Chhatrapati Shivaji", "city": "Mumbai" },
+          "duration": "3h 00m",
+          "amenities": ["entertainment", "wifi"]
+        },
+        {
+          "from": { "code": "BOM", "time": "19:45", "date": "Sun, 29 Jan 2023", "airport": "Chhatrapati Shivaji", "city": "Mumbai" },
+          "to":   { "code": "NBO", "time": "23:05", "date": "Sun, 29 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "duration": "3h 20m",
+          "amenities": ["baggage"]
+        }
+      ],
+      "layovers": [
+        {
+          "city": "Dubai",
+          "airport": "DXB",
+          "duration": "2h 30m",
+          "notes": ["Change of Terminal"]
+        },
+        {
+          "city": "Mumbai",
+          "airport": "BOM",
+          "duration": "1h 30m",
+          "notes": ["Self Transfer"]
+        }
+      ],
+      "fareDetails": {
+        "baseFare": 15500,
+        "taxes": 2500,
+        "fees": 1000,
+        "total": 19000
+      },
+      "baggageRules": {
+        "carryOn": "1 piece, max 7 kg",
+        "checked": "1 piece, max 20 kg",
+        "additionalInfo": "Baggage rules may differ per segment. Verify with each carrier."
+      },
+      "cancellationRules": {
+        "policy": "Non-Refundable",
+        "details": "Tickets are non-refundable as these are separately booked segments.",
+        "changePolicy": "No changes permitted. New tickets must be purchased."
+      },
+      "flightNotes": [
+        { "icon": "warning", "text": "Separate tickets booked together for cheaper price" },
+        { "icon": "plane",   "text": "Change of Terminal in Dubai" },
+        { "icon": "transfer","text": "Self Transfer in Mumbai" },
+        { "icon": "bag",     "text": "7 kg carry-on limit" }
+      ]
+    },
+    {
+      "id": "FL006",
+      "airlineId": "abc-airlines",
+      "airline": "ABC Airlines",
+      "airlineInitial": "A",
+      "class": "Economy",
+      "stops": 0,
+      "stopCity": null,
+      "departure": {
+        "time": "20:30",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "Moi Intl",
+        "city": "Mombasa",
+        "country": "Kenya",
+        "code": "MBA"
+      },
+      "arrival": {
+        "time": "06:25",
+        "date": "Mon, 30 Jan 2023",
+        "airport": "JKIA Terminal",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "code": "NBO"
+      },
+      "duration": "9h 55m",
+      "durationMinutes": 595,
+      "departureMinutes": 1230,
+      "arrivalMinutes": 385,
+      "price": 16000,
+      "seatsRemaining": 67,
+      "refundPolicy": "Partially Refundable",
+      "baggageIncluded": ["carry-on"],
+      "recommendedScore": 80,
+      "segments": [
+        {
+          "from": { "code": "MBA", "time": "20:30", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
+          "to":   { "code": "NBO", "time": "06:25", "date": "Mon, 30 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "duration": "9h 55m",
+          "amenities": ["entertainment", "wifi", "baggage"]
+        }
+      ],
+      "layovers": [],
+      "fareDetails": {
+        "baseFare": 13000,
+        "taxes": 2000,
+        "fees": 1000,
+        "total": 16000
+      },
+      "baggageRules": {
+        "carryOn": "1 piece, max 7 kg",
+        "checked": null,
+        "additionalInfo": "Checked bags available from $60 per bag."
+      },
+      "cancellationRules": {
+        "policy": "Partially Refundable",
+        "details": "Cancellation fee of $400 applies. Balance refunded within 7 business days.",
+        "changePolicy": "Date changes permitted with $175 fee plus fare difference."
+      },
+      "flightNotes": []
+    },
+    {
+      "id": "FL007",
+      "airlineId": "xyz-airways",
+      "airline": "XYZ Airways",
+      "airlineInitial": "X",
+      "class": "Business",
+      "stops": 1,
+      "stopCity": "Addis Ababa",
+      "departure": {
+        "time": "16:00",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "Moi Intl",
+        "city": "Mombasa",
+        "country": "Kenya",
+        "code": "MBA"
+      },
+      "arrival": {
+        "time": "03:40",
+        "date": "Mon, 30 Jan 2023",
+        "airport": "JKIA Terminal",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "code": "NBO"
+      },
+      "duration": "11h 40m",
+      "durationMinutes": 700,
+      "departureMinutes": 960,
+      "arrivalMinutes": 220,
+      "price": 22400,
+      "seatsRemaining": 4,
+      "refundPolicy": "Fully Refundable",
+      "baggageIncluded": ["carry-on", "checked"],
+      "recommendedScore": 82,
+      "segments": [
+        {
+          "from": { "code": "MBA", "time": "16:00", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
+          "to":   { "code": "ADD", "time": "20:30", "date": "Sun, 29 Jan 2023", "airport": "Bole Intl", "city": "Addis Ababa" },
+          "duration": "4h 30m",
+          "amenities": ["entertainment", "wifi", "info"]
+        },
+        {
+          "from": { "code": "ADD", "time": "00:30", "date": "Mon, 30 Jan 2023", "airport": "Bole Intl", "city": "Addis Ababa" },
+          "to":   { "code": "NBO", "time": "03:40", "date": "Mon, 30 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "duration": "3h 10m",
+          "amenities": ["entertainment", "baggage"]
+        }
+      ],
+      "layovers": [
+        {
+          "city": "Addis Ababa",
+          "airport": "ADD",
+          "duration": "4h 00m",
+          "notes": []
+        }
+      ],
+      "fareDetails": {
+        "baseFare": 18500,
+        "taxes": 2900,
+        "fees": 1000,
+        "total": 22400
+      },
+      "baggageRules": {
+        "carryOn": "2 pieces, max 12 kg total",
+        "checked": "2 pieces, max 32 kg each",
+        "additionalInfo": "Business class includes priority check-in and boarding."
+      },
+      "cancellationRules": {
+        "policy": "Fully Refundable",
+        "details": "Free cancellation up to 24 hours before departure. Full refund within 5 business days.",
+        "changePolicy": "Complimentary date changes permitted up to 24 hours before departure."
+      },
+      "flightNotes": []
+    },
+    {
+      "id": "FL008",
+      "airlineId": "bop-links",
+      "airline": "BOP Links",
+      "airlineInitial": "B",
+      "class": "First Class",
+      "stops": 2,
+      "stopCity": "Dubai, London",
+      "departure": {
+        "time": "09:00",
+        "date": "Sun, 29 Jan 2023",
+        "airport": "Moi Intl",
+        "city": "Mombasa",
+        "country": "Kenya",
+        "code": "MBA"
+      },
+      "arrival": {
+        "time": "03:00",
+        "date": "Mon, 30 Jan 2023",
+        "airport": "JKIA Terminal",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "code": "NBO"
+      },
+      "duration": "18h 00m",
+      "durationMinutes": 1080,
+      "departureMinutes": 540,
+      "arrivalMinutes": 180,
+      "price": 34900,
+      "seatsRemaining": 3,
+      "refundPolicy": "Fully Refundable",
+      "baggageIncluded": ["carry-on", "checked"],
+      "recommendedScore": 55,
+      "segments": [
+        {
+          "from": { "code": "MBA", "time": "09:00", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
+          "to":   { "code": "DXB", "time": "13:30", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
+          "duration": "4h 30m",
+          "amenities": ["entertainment", "wifi", "baggage", "info"]
+        },
+        {
+          "from": { "code": "DXB", "time": "16:00", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
+          "to":   { "code": "LHR", "time": "20:30", "date": "Sun, 29 Jan 2023", "airport": "Heathrow", "city": "London" },
+          "duration": "7h 30m",
+          "amenities": ["entertainment", "wifi", "baggage", "info"]
+        },
+        {
+          "from": { "code": "LHR", "time": "22:00", "date": "Sun, 29 Jan 2023", "airport": "Heathrow", "city": "London" },
+          "to":   { "code": "NBO", "time": "03:00", "date": "Mon, 30 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "duration": "4h 00m",
+          "amenities": ["entertainment", "wifi", "baggage"]
+        }
+      ],
+      "layovers": [
+        {
+          "city": "Dubai",
+          "airport": "DXB",
+          "duration": "2h 30m",
+          "notes": []
+        },
+        {
+          "city": "London",
+          "airport": "LHR",
+          "duration": "1h 30m",
+          "notes": ["Change of Terminal"]
+        }
+      ],
+      "fareDetails": {
+        "baseFare": 29500,
+        "taxes": 4400,
+        "fees": 1000,
+        "total": 34900
+      },
+      "baggageRules": {
+        "carryOn": "2 pieces, max 16 kg total",
+        "checked": "3 pieces, max 32 kg each",
+        "additionalInfo": "First class includes complimentary excess baggage up to 5 kg."
+      },
+      "cancellationRules": {
+        "policy": "Fully Refundable",
+        "details": "Free cancellation anytime before departure. Full refund within 3 business days.",
+        "changePolicy": "Unlimited free date and route changes."
+      },
+      "flightNotes": [
+        { "icon": "plane",   "text": "Change of Terminal in London" }
+      ]
+    }
+  ],
+  "filters": {
+    "stops": [
+      { "id": "nonstop",     "label": "Nonstop (23)", "price": "$110" },
+      { "id": "1-stop",      "label": "1 Stop (4)",   "price": "$324" },
+      { "id": "2plus-stops", "label": "2+ Stops (2)", "price": "$349" }
+    ],
+    "airlines": [
+      { "id": "abc-airlines", "label": "ABC Airlines",          "price": "$160" },
+      { "id": "abc-air-tech", "label": "AA Air Tech",  "price": "$203" },
+      { "id": "xyz-airways",  "label": "XYZ Airways",           "price": "$212" },
+      { "id": "bop-links",    "label": "BOP Links",             "price": "$129" },
+      { "id": "edf-express",  "label": "EDF Express",           "price": "$190" }
+    ],
+    "baggage": [
+      { "id": "carry-on", "label": "Carry-on bag", "price": "$129" },
+      { "id": "checked",  "label": "Checked bag",  "price": "$99" }
+    ]
+  },
+  "sortOptions": [
+    { "id": "recommended", "label": "Recommended", "icon": "/recommended.svg" },
+    { "id": "fastest",     "label": "Fastest",     "icon": "/fastest.svg" },
+    { "id": "cheapest",    "label": "Cheapest",    "icon": "/cheapest.svg" }
+  ],
+  "promos": [
+    {
+      "id": "guidelines",
+      "type": "image-card",
+      "image": "/covid.png",
+      "title": "International Guideline",
+      "description": "COVID safety measures adopted by various countries including VISA restrictions, quarantine rules, etc.",
+      "buttonLabel": "View guidelines"
+    },
+    {
+      "id": "sale",
+      "type": "sale-banner",
+      "image": "/sale-50.png",
+      "title": "We've found you a great deal!",
+      "description": "Get more, spend less with up to $575 off when you book your flight + stay together.",
+      "buttonLabel": "Shop flight"
+    },
+    {
+      "id": "login",
+      "type": "image-card",
+      "image": "/discount.png",
+      "title": "Log-in and get exclusive discounts!",
+      "description": "Log in and Unlock all the exclusive offers and use wallet etc",
+      "buttonLabel": "Login/Create Account"
+    }
+  ],
+  "search": {
+    "tripTypes": [
+      { "value": "round-trip",  "label": "Round Trip" },
+      { "value": "one-way",     "label": "One-way" },
+      { "value": "multi-city",  "label": "Multi-city" }
+    ],
+    "classes": [
+      { "value": "economy",         "label": "Economy" },
+      { "value": "premium-economy", "label": "Premium Economy" },
+      { "value": "business",        "label": "Business" },
+      { "value": "first",           "label": "First Class" }
+    ],
+    "tripCategories": [
+      { "value": "all",           "label": "Select Trip" },
+      { "value": "domestic",      "label": "Domestic" },
+      { "value": "international", "label": "International" }
+    ]
+  }
+}

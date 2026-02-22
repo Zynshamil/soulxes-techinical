@@ -1,5 +1,52 @@
 @import "tailwindcss";
 
+/* Segoe UI — loaded from Microsoft's CDN so macOS browsers get the real font.
+   local() is tried first (instant on Windows), CDN is the fallback. */
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Light"), local("SegoeUI-Light"),
+    url("https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Light/latest.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semilight"), local("SegoeUI-Semilight"),
+    url("https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/SemiLight/latest.woff2") format("woff2");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI"), local("SegoeUI"),
+    url("https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Normal/latest.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semibold"), local("SegoeUI-SemiBold"),
+    url("https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/SemiBold/latest.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI Bold"), local("SegoeUI-Bold"),
+    url("https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Bold/latest.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #f3f3f3;
   --foreground: #171717;
@@ -15,6 +62,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-primary: "Segoe UI", sans-serif;
+  --font-secondary: var(--font-abel);
+  --color-primary: #5D36AF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,5 +77,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
 }
+
+
