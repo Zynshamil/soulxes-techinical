@@ -89,7 +89,7 @@ export function SearchRow({ params, onChange, onSearch }) {
         <button
           type="button"
           onClick={() => setDateOpen((o) => !o)}
-          className={`flex items-center gap-2 h-10 rounded-md border bg-white px-3 text-sm min-w-[220px] w-full transition-colors ${
+          className={`flex items-center  gap-2 h-10 rounded-md border lg:w-[291px] bg-white px-3 text-sm min-w-[220px] w-full transition-colors ${
             dateOpen ? "border-primary ring-1 ring-primary" : "border-[#A1B0CC]"
           }`}
         >
@@ -162,7 +162,7 @@ export function SearchRow({ params, onChange, onSearch }) {
             setTravelerOpen((o) => !o);
             setTravelerError("");
           }}
-          className={`flex items-center gap-2 h-10 rounded-md border bg-white px-3 text-sm min-w-[140px] w-full transition-colors ${
+          className={`flex items-center lg:w-[190px] gap-2 h-10 rounded-md border bg-white px-3 text-sm min-w-[140px] w-full transition-colors ${
             travelerOpen
               ? "border-primary ring-1 ring-primary"
               : "border-[#A1B0CC]"
