@@ -32,7 +32,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#5C3D1E] text-white py-5">
+    <footer className="bg-[#a27443] text-white h-24 flex ">
       <div className="container mx-auto px-4 max-w-7xl flex items-center justify-between gap-4 flex-wrap">
         {/* Left: social icons + logo */}
         <div className="flex items-center gap-5">
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         {/* Right: copyright */}
-        <p className="text-white/70 text-sm">© 2023 GlobGoer Inc.</p>
+        <p className="text-white text-[18px] font-normal">© 2023 GlobGoer Inc.</p>
       </div>
     </footer>
   );
