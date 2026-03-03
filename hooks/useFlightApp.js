@@ -34,18 +34,27 @@ export function useFlightApp(flights) {
       (f) =>
         f.departure.city.toLowerCase().includes(q) ||
         f.departure.code.toLowerCase().includes(q) ||
-        f.departure.airport.toLowerCase().includes(q)
+        f.departure.airport.toLowerCase().includes(q),
     );
   }
-
   if (searchParams.to.trim()) {
     const q = searchParams.to.toLowerCase();
     filteredFlights = filteredFlights.filter(
       (f) =>
         f.arrival.city.toLowerCase().includes(q) ||
         f.arrival.code.toLowerCase().includes(q) ||
-        f.arrival.airport.toLowerCase().includes(q)
+        f.arrival.airport.toLowerCase().includes(q),
     );
+  }
+
+  if (searchParams?.departDate) {
+    filteredFlights = filteredFlights?.filter((val) => {
+
+      return (
+        new Date(val?.departure?.date).toISOString()?.split("T")?.[0] ===
+        searchParams?.departDate
+      );
+    });
   }
 
   if (activeFilters.stops.length > 0) {
@@ -55,25 +64,25 @@ export function useFlightApp(flights) {
         if (s === "1-stop") return f.stops === 1;
         if (s === "2plus-stops") return f.stops >= 2;
         return false;
-      })
+      }),
     );
   }
 
   if (activeFilters.airlines.length > 0) {
     filteredFlights = filteredFlights.filter((f) =>
-      activeFilters.airlines.includes(f.airlineId)
+      activeFilters.airlines.includes(f.airlineId),
     );
   }
 
   if (activeFilters.baggage.length > 0) {
     filteredFlights = filteredFlights.filter((f) =>
-      activeFilters.baggage.every((b) => f.baggageIncluded.includes(b))
+      activeFilters.baggage.every((b) => f.baggageIncluded.includes(b)),
     );
   }
 
   if (activeFilters.departureMax < 1440) {
     filteredFlights = filteredFlights.filter(
-      (f) => f.departureMinutes <= activeFilters.departureMax
+      (f) => f.departureMinutes <= activeFilters.departureMax,
     );
   }
 
@@ -85,10 +94,12 @@ export function useFlightApp(flights) {
       first: "First Class",
     };
     const target = classMap[searchParams.flightClass];
+
     if (target) {
       filteredFlights = filteredFlights.filter((f) => f.class === target);
     }
   }
+  console.log("searchParams", searchParams);
 
   if (searchParams.tripType === "one-way") {
     filteredFlights = filteredFlights.filter((f) => f.stops === 0);
@@ -120,13 +131,13 @@ export function useFlightApp(flights) {
       : {
           recommended: (() => {
             const f = [...filteredFlights].sort(
-              (a, b) => b.recommendedScore - a.recommendedScore
+              (a, b) => b.recommendedScore - a.recommendedScore,
             )[0];
             return `$${f.price.toLocaleString()} · ${f.duration}`;
           })(),
           fastest: (() => {
             const f = [...filteredFlights].sort(
-              (a, b) => a.durationMinutes - b.durationMinutes
+              (a, b) => a.durationMinutes - b.durationMinutes,
             )[0];
             return `$${f.price.toLocaleString()} · ${f.duration}`;
           })(),

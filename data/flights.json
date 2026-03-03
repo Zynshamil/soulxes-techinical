@@ -35,8 +35,20 @@
       "recommendedScore": 92,
       "segments": [
         {
-          "from": { "code": "MBA", "time": "14:50", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
-          "to":   { "code": "NBO", "time": "00:40", "date": "Mon, 30 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "from": {
+            "code": "MBA",
+            "time": "14:50",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Moi Intl",
+            "city": "Mombasa"
+          },
+          "to": {
+            "code": "NBO",
+            "time": "00:40",
+            "date": "Mon, 30 Jan 2023",
+            "airport": "JKIA Terminal",
+            "city": "Nairobi"
+          },
           "duration": "9h 50m",
           "amenities": ["entertainment", "wifi", "baggage"]
         }
@@ -59,6 +71,249 @@
         "changePolicy": "Date changes permitted with a $200 fee plus any fare difference."
       },
       "flightNotes": []
+    },
+    {
+      "id": "FL009",
+      "airlineId": "safari-air",
+      "airline": "Safari Air",
+      "airlineInitial": "S",
+      "class": "Economy",
+      "stops": 1,
+      "stopCity": "Johannesburg",
+      "departure": {
+        "time": "06:30",
+        "date": "Mon, 09 Mar 2026",
+        "airport": "JKIA Terminal",
+        "city": "Nairobi",
+        "country": "Kenya",
+        "code": "NBO"
+      },
+      "arrival": {
+        "time": "15:45",
+        "date": "Mon, 09 Mar 2026",
+        "airport": "Cape Town Intl",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "code": "CPT"
+      },
+      "duration": "9h 15m",
+      "durationMinutes": 555,
+      "departureMinutes": 390,
+      "arrivalMinutes": 945,
+      "price": 42500,
+      "seatsRemaining": 12,
+      "refundPolicy": "Partially Refundable",
+      "baggageIncluded": ["carry-on", "checked"],
+      "recommendedScore": 89,
+      "segments": [
+        {
+          "from": {
+            "code": "NBO",
+            "time": "06:30",
+            "date": "Mon, 09 Mar 2026",
+            "airport": "JKIA Terminal",
+            "city": "Nairobi"
+          },
+          "to": {
+            "code": "JNB",
+            "time": "10:45",
+            "date": "Mon, 09 Mar 2026",
+            "airport": "O.R. Tambo Intl",
+            "city": "Johannesburg"
+          },
+          "duration": "4h 15m",
+          "amenities": ["entertainment", "wifi"]
+        },
+        {
+          "from": {
+            "code": "JNB",
+            "time": "13:30",
+            "date": "Mon, 09 Mar 2026",
+            "airport": "O.R. Tambo Intl",
+            "city": "Johannesburg"
+          },
+          "to": {
+            "code": "CPT",
+            "time": "15:45",
+            "date": "Mon, 09 Mar 2026",
+            "airport": "Cape Town Intl",
+            "city": "Cape Town"
+          },
+          "duration": "2h 15m",
+          "amenities": ["entertainment", "baggage"]
+        }
+      ],
+      "layovers": [
+        {
+          "city": "Johannesburg",
+          "airport": "JNB",
+          "duration": "2h 45m",
+          "notes": []
+        }
+      ],
+      "fareDetails": {
+        "baseFare": 35000,
+        "taxes": 6000,
+        "fees": 1500,
+        "total": 42500
+      },
+      "baggageRules": {
+        "carryOn": "1 piece, max 7 kg",
+        "checked": "1 piece, max 23 kg",
+        "additionalInfo": "Standard economy baggage allowance applies."
+      },
+      "cancellationRules": {
+        "policy": "Partially Refundable",
+        "details": "A $100 cancellation fee applies.",
+        "changePolicy": "Changes allowed for a $75 fee plus fare difference."
+      },
+      "flightNotes": []
+    },
+    {
+      "id": "FL010",
+      "airlineId": "desert-wings",
+      "airline": "Desert Wings",
+      "airlineInitial": "D",
+      "class": "Business",
+      "stops": 0,
+      "stopCity": null,
+      "departure": {
+        "time": "02:15",
+        "date": "Tue, 10 Mar 2026",
+        "airport": "Dubai Intl",
+        "city": "Dubai",
+        "country": "UAE",
+        "code": "DXB"
+      },
+      "arrival": {
+        "time": "06:40",
+        "date": "Tue, 10 Mar 2026",
+        "airport": "Heathrow",
+        "city": "London",
+        "country": "UK",
+        "code": "LHR"
+      },
+      "duration": "7h 25m",
+      "durationMinutes": 445,
+      "departureMinutes": 135,
+      "arrivalMinutes": 400,
+      "price": 85000,
+      "seatsRemaining": 4,
+      "recommendedScore": 95,
+      "refundPolicy": "Fully Refundable",
+      "baggageIncluded": ["carry-on", "checked"],
+      "segments": [
+        {
+          "from": {
+            "code": "DXB",
+            "time": "02:15",
+            "date": "Tue, 10 Mar 2026",
+            "airport": "Dubai Intl",
+            "city": "Dubai"
+          },
+          "to": {
+            "code": "LHR",
+            "time": "06:40",
+            "date": "Tue, 10 Mar 2026",
+            "airport": "Heathrow",
+            "city": "London"
+          },
+          "duration": "7h 25m",
+          "amenities": ["entertainment", "wifi", "baggage", "info"]
+        }
+      ],
+      "layovers": [],
+      "fareDetails": {
+        "baseFare": 72000,
+        "taxes": 10000,
+        "fees": 3000,
+        "total": 85000
+      },
+      "baggageRules": {
+        "carryOn": "2 pieces, max 14 kg total",
+        "checked": "2 pieces, max 32 kg each",
+        "additionalInfo": "Includes chauffeur drive service to and from the airport."
+      },
+      "cancellationRules": {
+        "policy": "Fully Refundable",
+        "details": "No cancellation fee if cancelled 12 hours before departure.",
+        "changePolicy": "Complimentary changes allowed."
+      },
+      "flightNotes": [
+        { "icon": "plane", "text": "A380 Service with Onboard Lounge" }
+      ]
+    },
+    {
+      "id": "FL011",
+      "airlineId": "atlantic-air",
+      "airline": "Atlantic Air",
+      "airlineInitial": "T",
+      "class": "Economy",
+      "stops": 0,
+      "stopCity": null,
+      "departure": {
+        "time": "21:30",
+        "date": "Wed, 11 Mar 2026",
+        "airport": "JFK",
+        "city": "New York",
+        "country": "USA",
+        "code": "JFK"
+      },
+      "arrival": {
+        "time": "10:45",
+        "date": "Thu, 12 Mar 2026",
+        "airport": "Charles de Gaulle",
+        "city": "Paris",
+        "country": "France",
+        "code": "CDG"
+      },
+      "duration": "7h 15m",
+      "durationMinutes": 435,
+      "departureMinutes": 1290,
+      "arrivalMinutes": 645,
+      "price": 54000,
+      "seatsRemaining": 142,
+      "refundPolicy": "Non-Refundable",
+      "baggageIncluded": ["carry-on"],
+      "recommendedScore": 72,
+      "segments": [
+        {
+          "from": {
+            "code": "JFK",
+            "time": "21:30",
+            "date": "Wed, 11 Mar 2026",
+            "airport": "JFK",
+            "city": "New York"
+          },
+          "to": {
+            "code": "CDG",
+            "time": "10:45",
+            "date": "Thu, 12 Mar 2026",
+            "airport": "Charles de Gaulle",
+            "city": "Paris"
+          },
+          "duration": "7h 15m",
+          "amenities": ["entertainment", "wifi"]
+        }
+      ],
+      "layovers": [],
+      "fareDetails": {
+        "baseFare": 42000,
+        "taxes": 9500,
+        "fees": 2500,
+        "total": 54000
+      },
+      "baggageRules": {
+        "carryOn": "1 piece, max 10 kg",
+        "checked": null,
+        "additionalInfo": "Checked baggage available for $75 per bag."
+      },
+      "cancellationRules": {
+        "policy": "Non-Refundable",
+        "details": "Ticket is non-refundable. Only taxes may be recoverable.",
+        "changePolicy": "$250 change fee plus fare difference."
+      },
+      "flightNotes": [{ "icon": "warning", "text": "Overnight flight" }]
     },
     {
       "id": "FL002",
@@ -95,14 +350,38 @@
       "recommendedScore": 78,
       "segments": [
         {
-          "from": { "code": "MBA", "time": "08:30", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
-          "to":   { "code": "DXB", "time": "14:30", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
+          "from": {
+            "code": "MBA",
+            "time": "08:30",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Moi Intl",
+            "city": "Mombasa"
+          },
+          "to": {
+            "code": "DXB",
+            "time": "14:30",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Dubai Intl",
+            "city": "Dubai"
+          },
           "duration": "6h 00m",
           "amenities": ["entertainment", "wifi"]
         },
         {
-          "from": { "code": "DXB", "time": "18:15", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
-          "to":   { "code": "NBO", "time": "21:00", "date": "Sun, 29 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "from": {
+            "code": "DXB",
+            "time": "18:15",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Dubai Intl",
+            "city": "Dubai"
+          },
+          "to": {
+            "code": "NBO",
+            "time": "21:00",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "JKIA Terminal",
+            "city": "Nairobi"
+          },
           "duration": "2h 45m",
           "amenities": ["entertainment", "baggage"]
         }
@@ -132,10 +411,13 @@
         "changePolicy": "No date changes are permitted after booking."
       },
       "flightNotes": [
-        { "icon": "warning", "text": "Separate tickets booked together for cheaper price" },
-        { "icon": "plane",   "text": "Change of Terminal" },
-        { "icon": "transfer","text": "Self Transfer" },
-        { "icon": "bag",     "text": "7 kg carry-on limit" }
+        {
+          "icon": "warning",
+          "text": "Separate tickets booked together for cheaper price"
+        },
+        { "icon": "plane", "text": "Change of Terminal" },
+        { "icon": "transfer", "text": "Self Transfer" },
+        { "icon": "bag", "text": "7 kg carry-on limit" }
       ]
     },
     {
@@ -173,8 +455,20 @@
       "recommendedScore": 88,
       "segments": [
         {
-          "from": { "code": "MBA", "time": "10:15", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
-          "to":   { "code": "NBO", "time": "20:00", "date": "Sun, 29 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "from": {
+            "code": "MBA",
+            "time": "10:15",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Moi Intl",
+            "city": "Mombasa"
+          },
+          "to": {
+            "code": "NBO",
+            "time": "20:00",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "JKIA Terminal",
+            "city": "Nairobi"
+          },
           "duration": "9h 45m",
           "amenities": ["entertainment", "wifi", "baggage", "info"]
         }
@@ -233,8 +527,20 @@
       "recommendedScore": 85,
       "segments": [
         {
-          "from": { "code": "MBA", "time": "06:00", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
-          "to":   { "code": "NBO", "time": "16:05", "date": "Sun, 29 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "from": {
+            "code": "MBA",
+            "time": "06:00",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Moi Intl",
+            "city": "Mombasa"
+          },
+          "to": {
+            "code": "NBO",
+            "time": "16:05",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "JKIA Terminal",
+            "city": "Nairobi"
+          },
           "duration": "10h 05m",
           "amenities": ["entertainment", "wifi"]
         }
@@ -293,20 +599,56 @@
       "recommendedScore": 65,
       "segments": [
         {
-          "from": { "code": "MBA", "time": "07:45", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
-          "to":   { "code": "DXB", "time": "12:45", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
+          "from": {
+            "code": "MBA",
+            "time": "07:45",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Moi Intl",
+            "city": "Mombasa"
+          },
+          "to": {
+            "code": "DXB",
+            "time": "12:45",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Dubai Intl",
+            "city": "Dubai"
+          },
           "duration": "5h 00m",
           "amenities": ["entertainment"]
         },
         {
-          "from": { "code": "DXB", "time": "15:15", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
-          "to":   { "code": "BOM", "time": "18:15", "date": "Sun, 29 Jan 2023", "airport": "Chhatrapati Shivaji", "city": "Mumbai" },
+          "from": {
+            "code": "DXB",
+            "time": "15:15",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Dubai Intl",
+            "city": "Dubai"
+          },
+          "to": {
+            "code": "BOM",
+            "time": "18:15",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Chhatrapati Shivaji",
+            "city": "Mumbai"
+          },
           "duration": "3h 00m",
           "amenities": ["entertainment", "wifi"]
         },
         {
-          "from": { "code": "BOM", "time": "19:45", "date": "Sun, 29 Jan 2023", "airport": "Chhatrapati Shivaji", "city": "Mumbai" },
-          "to":   { "code": "NBO", "time": "23:05", "date": "Sun, 29 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "from": {
+            "code": "BOM",
+            "time": "19:45",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Chhatrapati Shivaji",
+            "city": "Mumbai"
+          },
+          "to": {
+            "code": "NBO",
+            "time": "23:05",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "JKIA Terminal",
+            "city": "Nairobi"
+          },
           "duration": "3h 20m",
           "amenities": ["baggage"]
         }
@@ -342,10 +684,13 @@
         "changePolicy": "No changes permitted. New tickets must be purchased."
       },
       "flightNotes": [
-        { "icon": "warning", "text": "Separate tickets booked together for cheaper price" },
-        { "icon": "plane",   "text": "Change of Terminal in Dubai" },
-        { "icon": "transfer","text": "Self Transfer in Mumbai" },
-        { "icon": "bag",     "text": "7 kg carry-on limit" }
+        {
+          "icon": "warning",
+          "text": "Separate tickets booked together for cheaper price"
+        },
+        { "icon": "plane", "text": "Change of Terminal in Dubai" },
+        { "icon": "transfer", "text": "Self Transfer in Mumbai" },
+        { "icon": "bag", "text": "7 kg carry-on limit" }
       ]
     },
     {
@@ -383,8 +728,20 @@
       "recommendedScore": 80,
       "segments": [
         {
-          "from": { "code": "MBA", "time": "20:30", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
-          "to":   { "code": "NBO", "time": "06:25", "date": "Mon, 30 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "from": {
+            "code": "MBA",
+            "time": "20:30",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Moi Intl",
+            "city": "Mombasa"
+          },
+          "to": {
+            "code": "NBO",
+            "time": "06:25",
+            "date": "Mon, 30 Jan 2023",
+            "airport": "JKIA Terminal",
+            "city": "Nairobi"
+          },
           "duration": "9h 55m",
           "amenities": ["entertainment", "wifi", "baggage"]
         }
@@ -443,14 +800,38 @@
       "recommendedScore": 82,
       "segments": [
         {
-          "from": { "code": "MBA", "time": "16:00", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
-          "to":   { "code": "ADD", "time": "20:30", "date": "Sun, 29 Jan 2023", "airport": "Bole Intl", "city": "Addis Ababa" },
+          "from": {
+            "code": "MBA",
+            "time": "16:00",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Moi Intl",
+            "city": "Mombasa"
+          },
+          "to": {
+            "code": "ADD",
+            "time": "20:30",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Bole Intl",
+            "city": "Addis Ababa"
+          },
           "duration": "4h 30m",
           "amenities": ["entertainment", "wifi", "info"]
         },
         {
-          "from": { "code": "ADD", "time": "00:30", "date": "Mon, 30 Jan 2023", "airport": "Bole Intl", "city": "Addis Ababa" },
-          "to":   { "code": "NBO", "time": "03:40", "date": "Mon, 30 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "from": {
+            "code": "ADD",
+            "time": "00:30",
+            "date": "Mon, 30 Jan 2023",
+            "airport": "Bole Intl",
+            "city": "Addis Ababa"
+          },
+          "to": {
+            "code": "NBO",
+            "time": "03:40",
+            "date": "Mon, 30 Jan 2023",
+            "airport": "JKIA Terminal",
+            "city": "Nairobi"
+          },
           "duration": "3h 10m",
           "amenities": ["entertainment", "baggage"]
         }
@@ -516,20 +897,56 @@
       "recommendedScore": 55,
       "segments": [
         {
-          "from": { "code": "MBA", "time": "09:00", "date": "Sun, 29 Jan 2023", "airport": "Moi Intl", "city": "Mombasa" },
-          "to":   { "code": "DXB", "time": "13:30", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
+          "from": {
+            "code": "MBA",
+            "time": "09:00",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Moi Intl",
+            "city": "Mombasa"
+          },
+          "to": {
+            "code": "DXB",
+            "time": "13:30",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Dubai Intl",
+            "city": "Dubai"
+          },
           "duration": "4h 30m",
           "amenities": ["entertainment", "wifi", "baggage", "info"]
         },
         {
-          "from": { "code": "DXB", "time": "16:00", "date": "Sun, 29 Jan 2023", "airport": "Dubai Intl", "city": "Dubai" },
-          "to":   { "code": "LHR", "time": "20:30", "date": "Sun, 29 Jan 2023", "airport": "Heathrow", "city": "London" },
+          "from": {
+            "code": "DXB",
+            "time": "16:00",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Dubai Intl",
+            "city": "Dubai"
+          },
+          "to": {
+            "code": "LHR",
+            "time": "20:30",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Heathrow",
+            "city": "London"
+          },
           "duration": "7h 30m",
           "amenities": ["entertainment", "wifi", "baggage", "info"]
         },
         {
-          "from": { "code": "LHR", "time": "22:00", "date": "Sun, 29 Jan 2023", "airport": "Heathrow", "city": "London" },
-          "to":   { "code": "NBO", "time": "03:00", "date": "Mon, 30 Jan 2023", "airport": "JKIA Terminal", "city": "Nairobi" },
+          "from": {
+            "code": "LHR",
+            "time": "22:00",
+            "date": "Sun, 29 Jan 2023",
+            "airport": "Heathrow",
+            "city": "London"
+          },
+          "to": {
+            "code": "NBO",
+            "time": "03:00",
+            "date": "Mon, 30 Jan 2023",
+            "airport": "JKIA Terminal",
+            "city": "Nairobi"
+          },
           "duration": "4h 00m",
           "amenities": ["entertainment", "wifi", "baggage"]
         }
@@ -565,32 +982,32 @@
         "changePolicy": "Unlimited free date and route changes."
       },
       "flightNotes": [
-        { "icon": "plane",   "text": "Change of Terminal in London" }
+        { "icon": "plane", "text": "Change of Terminal in London" }
       ]
     }
   ],
   "filters": {
     "stops": [
-      { "id": "nonstop",     "label": "Nonstop (23)", "price": "$110" },
-      { "id": "1-stop",      "label": "1 Stop (4)",   "price": "$324" },
+      { "id": "nonstop", "label": "Nonstop (23)", "price": "$110" },
+      { "id": "1-stop", "label": "1 Stop (4)", "price": "$324" },
       { "id": "2plus-stops", "label": "2+ Stops (2)", "price": "$349" }
     ],
     "airlines": [
-      { "id": "abc-airlines", "label": "ABC Airlines",          "price": "$160" },
-      { "id": "abc-air-tech", "label": "AA Air Tech",  "price": "$203" },
-      { "id": "xyz-airways",  "label": "XYZ Airways",           "price": "$212" },
-      { "id": "bop-links",    "label": "BOP Links",             "price": "$129" },
-      { "id": "edf-express",  "label": "EDF Express",           "price": "$190" }
+      { "id": "abc-airlines", "label": "ABC Airlines", "price": "$160" },
+      { "id": "abc-air-tech", "label": "AA Air Tech", "price": "$203" },
+      { "id": "xyz-airways", "label": "XYZ Airways", "price": "$212" },
+      { "id": "bop-links", "label": "BOP Links", "price": "$129" },
+      { "id": "edf-express", "label": "EDF Express", "price": "$190" }
     ],
     "baggage": [
       { "id": "carry-on", "label": "Carry-on bag", "price": "$129" },
-      { "id": "checked",  "label": "Checked bag",  "price": "$99" }
+      { "id": "checked", "label": "Checked bag", "price": "$99" }
     ]
   },
   "sortOptions": [
     { "id": "recommended", "label": "Recommended", "icon": "/recommended.svg" },
-    { "id": "fastest",     "label": "Fastest",     "icon": "/fastest.svg" },
-    { "id": "cheapest",    "label": "Cheapest",    "icon": "/cheapest.svg" }
+    { "id": "fastest", "label": "Fastest", "icon": "/fastest.svg" },
+    { "id": "cheapest", "label": "Cheapest", "icon": "/cheapest.svg" }
   ],
   "promos": [
     {
@@ -620,19 +1037,19 @@
   ],
   "search": {
     "tripTypes": [
-      { "value": "round-trip",  "label": "Round Trip" },
-      { "value": "one-way",     "label": "One-way" },
-      { "value": "multi-city",  "label": "Multi-city" }
+      { "value": "round-trip", "label": "Round Trip" },
+      { "value": "one-way", "label": "One-way" },
+      { "value": "multi-city", "label": "Multi-city" }
     ],
     "classes": [
-      { "value": "economy",         "label": "Economy" },
+      { "value": "economy", "label": "Economy" },
       { "value": "premium-economy", "label": "Premium Economy" },
-      { "value": "business",        "label": "Business" },
-      { "value": "first",           "label": "First Class" }
+      { "value": "business", "label": "Business" },
+      { "value": "first", "label": "First Class" }
     ],
     "tripCategories": [
-      { "value": "all",           "label": "Select Trip" },
-      { "value": "domestic",      "label": "Domestic" },
+      { "value": "all", "label": "Select Trip" },
+      { "value": "domestic", "label": "Domestic" },
       { "value": "international", "label": "International" }
     ]
   }
